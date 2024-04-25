@@ -69,7 +69,7 @@ Si immagazzinano nella ROM i numeri per generare una sinusoide che oscilli tra 0
 
     for (i = 0; i < 256; i++)
       {
-        dac.setVoltage(pgm_read_word(&(DACLookup_FullSine_8Bit[i])), false);
+        dac.setVoltage(pgm_read_word(&(DACLookup_FullSine[i])), false);
       }
 
 dove:
