@@ -67,7 +67,7 @@ Si immagazzinano nella ROM i numeri per generare una sinusoide che oscilli tra 0
 
  ### Fase di LOOP
 
-    for (i = 0; i < 256; i++)
+    for (int i = 0; i < 256; i++)
       {
         dac.setVoltage(pgm_read_word(&(DACLookup_FullSine[i])), false);
       }
